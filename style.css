@@ -1,0 +1,118 @@
+/* CSS Personalizado de Alto Padrão - Dra. Andressa Lima */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --gold: #C5A059;
+    --gold-light: #E5C778;
+    --gold-dark: #9A7736;
+    --brand-red: #691110;
+    --brand-dark: #4D0A0A;
+    --brand-deepest: #380606;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #242A27;
+    background-color: #FBFBFA;
+}
+
+h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Botões Estilizados */
+.btn-gold {
+    background: linear-gradient(135deg, #E5C778 0%, #C5A059 100%);
+    color: #691110;
+    font-weight: 600;
+    padding: 0.875rem 1.75rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 14px rgba(197, 160, 89, 0.35);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-gold:hover {
+    background: linear-gradient(135deg, #F0D796 0%, #D4AF37 100%);
+    box-shadow: 0 6px 20px rgba(197, 160, 89, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-gold-outline {
+    border: 1px solid rgba(197, 160, 89, 0.6);
+    color: #E5C778;
+    background-color: rgba(197, 160, 89, 0.08);
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-gold-outline:hover {
+    background-color: rgba(197, 160, 89, 0.2);
+    border-color: #E5C778;
+    transform: translateY(-1px);
+}
+
+.btn-dark-outline {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: 500;
+    padding: 0.875rem 1.75rem;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-dark-outline:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: #FFFFFF;
+}
+
+/* Card de Serviço */
+.card-service {
+    background-color: #FFFFFF;
+    border: 1px solid #EAECE9;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+}
+
+.card-service:hover {
+    transform: translateY(-4px);
+    border-color: rgba(197, 160, 89, 0.5);
+    box-shadow: 0 20px 25px -5px rgba(105, 17, 16, 0.06), 0 10px 10px -5px rgba(105, 17, 16, 0.02);
+}
+
+/* Botão Flutuante do WhatsApp */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    z-index: 50;
+    transition: all 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.6);
+}
