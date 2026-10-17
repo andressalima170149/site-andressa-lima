@@ -164,7 +164,7 @@ h1, h2, h3, h4, .font-serif {
 
 
 /* Bell MT e Instagram na página principal institucional. */
-.page-home .office-brand-name {
+.office-brand .office-brand-name {
     font-family: 'Bell MT', 'Cormorant Garamond', Georgia, serif;
     font-weight: 700;
     font-style: normal;
@@ -183,5 +183,5 @@ h1, h2, h3, h4, .font-serif {
 .instagram-link:hover { text-decoration: underline; }
 .instagram-link:focus-visible { outline: 2px solid #E5C778; outline-offset: 4px; }
 @media (max-width: 639px) {
-    .page-home .office-brand-name { font-size: 27px; }
+    .office-brand .office-brand-name { font-size: 27px; }
 }
