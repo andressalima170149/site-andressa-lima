@@ -1,4 +1,4 @@
-/* CSS Personalizado de Alto Padrão - Dra. Andressa Lima */
+/* CSS Personalizado - Andressa Lima Sociedade de Advogados */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -115,4 +115,73 @@ h1, h2, h3, h4, .font-serif {
 .floating-whatsapp:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 24px rgba(37, 211, 102, 0.6);
+}
+
+
+/* Identidade institucional compartilhada com o sistema do escritório. */
+.office-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    color: #fff;
+    text-decoration: none;
+}
+.office-brand-logo {
+    display: block;
+    height: 56px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.office-brand-text { display: flex; flex-direction: column; gap: 4px; }
+.office-brand-name {
+    font-family: 'Pinyon Script', 'Edwardian Script ITC', 'Brush Script MT', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+.office-brand-subtitle {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 12.5px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+    color: #dcc0c0;
+}
+.office-brand:hover .office-brand-name { color: #E5C778; }
+.office-brand:focus-visible { outline: 2px solid #E5C778; outline-offset: 6px; }
+.office-brand-footer .office-brand-logo { height: 64px; }
+.office-brand-footer .office-brand-name { font-size: 38px; }
+@media (max-width: 639px) {
+    .office-brand { gap: 10px; }
+    .office-brand-logo { height: 44px; }
+    .office-brand-name { font-size: 32px; }
+    .office-brand-subtitle { font-size: 11px; }
+    .office-brand-footer .office-brand-name { font-size: 34px; }
+}
+
+
+/* Bell MT e Instagram na página principal institucional. */
+.page-home .office-brand-name {
+    font-family: 'Bell MT', 'Cormorant Garamond', Georgia, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: 0.005em;
+}
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #E5C778;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.instagram-link:hover { text-decoration: underline; }
+.instagram-link:focus-visible { outline: 2px solid #E5C778; outline-offset: 4px; }
+@media (max-width: 639px) {
+    .page-home .office-brand-name { font-size: 27px; }
 }
